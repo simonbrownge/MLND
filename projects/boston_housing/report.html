@@ -13634,10 +13634,10 @@ Range in prices: $73,357.39
 <h3 id="Question-11---Applicability">Question 11 - Applicability<a class="anchor-link" href="#Question-11---Applicability">&#182;</a></h3><p><em>In a few sentences, discuss whether the constructed model should or should not be used in a real-world setting.</em><br>
 <strong>Hint:</strong> Some questions to answering:</p>
 <ul>
-<li><em>How relevant today is data that was collected from 1978?</em> Although the data from 1978 is highly unlikely to be match the data for today's house prices generally follow a linear pattern and although expensive houses tend to rise in price faster than lower priced houses the market as a whole tends to goes up.  This is unless an outside influence like a major change in area or a macro economic issue i.e. recession occurs so there may be similar patterns.  However, the effect of the features will have changed over time as the importance to people changes, for example teacher to student ratio may not be as important now as a schools average results or numnber of bedrooms could be less important in comparison to sq metre of house.</li>
-<li><em>Are the features present in the data sufficient to describe a home?</em>  I would describe them as the minimum and therefore unlikely to create a robust model, for a more accurate model i think you would need at least 2 more features e.g. sq metre of house, average land value for area</li>
-<li><em>Is the model robust enough to make consistent predictions?</em> From the 10 trials above it would seem the model is not accurate enough.  The range of $70,000 may aid a person buying at the higher end i.e. over $700K but even then there is a 10% difference on the value, for lower value houses the difference could be 40% or more making the prediction useless for the user. </li>
-<li><em>Would data collected in an urban city like Boston be applicable in a rural city?</em> Probably not, the price and range of prices for house in rural areas are lower than an urban environment so the data would overpredict rural house prices.  Also due to their nature there would likely be less fluctation in the features in a rual environment meaning the model may over fit that data</li>
+<li>*How relevant today is data that was collected from 1978?</li>
+<li>*Are the features present in the data sufficient to describe a home?</li>
+<li>*Is the model robust enough to make consistent predictions?</li>
+<li>*Would data collected in an urban city like Boston be applicable in a rural city? </li>
 </ul>
 
 </div>
@@ -13648,7 +13648,11 @@ Range in prices: $73,357.39
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
+<p><strong>Answer: </strong>
+How relevant today is data that was collected from 1978? Although the data from 1978 is highly unlikely to be match the data for today's house prices generally follow a linear pattern and although expensive houses tend to rise in price faster than lower priced houses the market as a whole tends to goes up. This is unless an outside influence like a major change in area or a macro economic issue i.e. recession occurs so there may be similar patterns. However, the effect of the features will have changed over time as the importance to people changes, for example teacher to student ratio may not be as important now as a schools average results or numnber of bedrooms could be less important in comparison to sq metre of house.
+Are the features present in the data sufficient to describe a home? I would describe them as the minimum and therefore unlikely to create a robust model, for a more accurate model i think you would need at least 2 more features e.g. sq metre of house, average land value for area
+Is the model robust enough to make consistent predictions? From the 10 trials above it would seem the model is not accurate enough. The range of  70,000 may aid a person buying at the higher end i.e.over 70,000 but even then there is a 10% difference on the value, for lower value houses the difference could be 40% or more making the prediction useless for the user.
+Would data collected in an urban city like Boston be applicable in a rural city? Probably not, the price and range of prices for house in rural areas are lower than an urban environment so the data would overpredict rural house prices. Also due to their nature there would likely be less fluctation in the features in a rual environment meaning the model may over fit that data</p>
 
 </div>
 </div>
