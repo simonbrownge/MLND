@@ -13208,7 +13208,7 @@ as more training points are added the training curve moves from 1 to a plateau a
 What about the testing curve?
 Testing starts at 0 and rising as more training points are added before converging with the training curve around 200 training points.
 Would having more training points benefit the model?
-from the graph it looks like training of the model is closest to testing between 300 and 350 training points and then they start to diverge again, slightly.  It would be useful to have more training points to check that the model doesn't converge again but as they have converged well around 300 and with a good score he model has been trained well.</p>
+from the graph it looks like training of the model is closest to testing between 300 and 350 training points and then at 350 they start to diverge again, slightly.  It would be useful to have more training points past 400 to check that the model doesn't converge again but as they have converged well around 300 and with a good score the model has been trained well.</p>
 
 </div>
 </div>
@@ -13329,6 +13329,7 @@ the convergence between training and testing data to a good R2 score of ~0.8 sho
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
+<p>Grid Search allows you to evaluate different parameters of an estimator by selecting the estimator or model, iteratively running a range of paramaters and then scoring or predicting how accurate they will be.  by using grid search you can optimize a learning algorithm by ranking the scores of each parameter and then choosing the best parameters thus giving you the most accurate model</p>
 
 </div>
 </div>
@@ -13349,7 +13350,9 @@ the convergence between training and testing data to a good R2 score of ~0.8 sho
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
+<p>**Answer:</p>
+<p>K-fold cross validation splits the data into k number of groups and then each group, except one, is used to train the model, one group is kept for testing.  The average of these k groups is then computed.
+The advantage of using cross-validation is that it reuses the data meaning that the whole dataset is utilised for training and testing.  Cross Validation works well with grid search as it will produce  performance estimates for each grid searched parameter that should allow us to fit the best mod</p>
 
 </div>
 </div>
